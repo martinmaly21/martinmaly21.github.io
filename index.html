@@ -46,6 +46,34 @@
             cursor: pointer;
             float: right;
         }
+        .contact-form {
+            margin-top: 30px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .contact-form h2 {
+            margin-top: 0;
+        }
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #333;
+            border: 1px solid #444;
+            color: #fff;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #444;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -69,6 +97,15 @@
         <img src="/api/placeholder/800/600" alt="Martin working at his desk">
         
         <p>throughout his journey, martin has achieved several milestones, including creating an application for vfx artists called hdreye that is now being used by about 50,000 artists and studios, and holding successful wellness events for japanese entrepreneurs in tokyo. his biggest dream is to have absolute control over how he spends his time, and to one day open a permanent sauna, ice bath, and breathwork space in tokyo as an oasis for entrepreneurs, artists, and athletes to recharge and explore their consciousness.</p>
+        
+        <div class="contact-form">
+            <p>if you want to get in touch, or need help with something i've built, plz reach out!</p>
+            <form action="http://formspree.io/martinmaly66@hotmail.com" method="POST">
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="body" placeholder="Your message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
     </div>
 </body>
 </html>
