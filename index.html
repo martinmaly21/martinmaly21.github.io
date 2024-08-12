@@ -67,8 +67,8 @@
             border: 1px solid #444;
             color: #fff;
             border-radius: 4px;
-            font-family: Arial, sans-serif; /* Match the body font */
-            font-size: 1em; /* Match the body font size */
+            font-family: Arial, sans-serif;
+            font-size: 1em;
         }
         .contact-form textarea {
             resize: vertical;
@@ -82,11 +82,31 @@
             cursor: pointer;
             border-radius: 4px;
             transition: background-color 0.3s ease;
-            font-family: Arial, sans-serif; /* Match the body font */
-            font-size: 1em; /* Match the body font size */
+            font-family: Arial, sans-serif;
+            font-size: 1em;
         }
         .contact-form input[type="submit"]:hover {
             background-color: #555;
+        }
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 30px 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: opacity 0.3s ease;
+        }
+        .social-links a:hover {
+            opacity: 0.8;
+        }
+        .social-links img {
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -119,6 +139,15 @@
                 <textarea name="body" placeholder="Your message" required></textarea>
                 <input type="submit" value="Send">
             </form>
+        </div>
+      
+        <div class="social-links">
+            <a href="https://x.com/mountain_mal" target="_blank">
+                <img src="/api/placeholder/32/32" alt="Twitter Logo">
+            </a>
+            <a href="https://www.instagram.com/martinmaly/" target="_blank">
+                <img src="/api/placeholder/32/32" alt="Instagram Logo">
+            </a>
         </div>
     </div>
 </body>
